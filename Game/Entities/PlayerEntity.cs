@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Abilities;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -27,26 +26,6 @@ namespace Entities
         void Update()
         {
             _abilitySystem.Cast();
-        }
-
-        public TimeSpan CalculateDelay(float baseDelay)
-        {
-            return default;
-        }
-
-        public float CalculateDamage(float baseDamage)
-        {
-            return 0;
-        }
-
-        public TimeSpan CalculateDuration(TimeSpan baseDuration)
-        {
-            return default;
-        }
-
-        public TimeSpan CalculateInterval(TimeSpan interval)
-        {
-            return default;
         }
 
         public bool IsAlive()

@@ -20,7 +20,7 @@ namespace Abilities
                 return;
 
             _isExecuting = true;
-            await _ability.Execute(_caster);
+            await _ability.Cast(_caster);
             _isExecuting = false;
         }
     }

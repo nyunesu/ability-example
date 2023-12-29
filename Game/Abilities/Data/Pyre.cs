@@ -20,7 +20,7 @@ namespace Abilities.Data
         [SerializeField]
         ITargetProvider _targetProvider;
 
-        public override async UniTask Execute(IEntity caster)
+        public override async UniTask Cast(IEntity caster)
         {
             TimeSpan elapsed = TimeSpan.Zero;
             while (elapsed < caster.CalculateDuration(_baseDuration))

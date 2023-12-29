@@ -20,7 +20,7 @@ namespace Abilities.Data
         [SerializeField]
         ITargetProvider _targetProvider;
 
-        public override async UniTask Execute(IEntity caster)
+        public override async UniTask Cast(IEntity caster)
         {
             IEntity target = await _targetProvider.GetTarget(caster);
             while (target.IsAlive())

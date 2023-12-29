@@ -2,5 +2,5 @@
 
 public interface IAbility
 {
-    UniTask Execute(IEntity caster);
+    UniTask Cast(IEntity caster);
 }

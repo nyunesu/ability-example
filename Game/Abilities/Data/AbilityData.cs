@@ -5,6 +5,6 @@ namespace Abilities.Data
 {
     abstract class AbilityData : SerializedScriptableObject, IAbility
     {
-        public abstract UniTask Execute(IEntity caster);
+        public abstract UniTask Cast(IEntity caster);
     }
 }
